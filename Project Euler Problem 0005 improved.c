@@ -21,7 +21,7 @@ int main(){
                 array[remainder]=1;
                 exponent=0;
             }
-            else {
+            else{
                 for(j=2; j<=remainder; j++){
                     while(isPrime(j)){          //
                         if(remainder%j==0){     // if divisible by prime, increase exponent and divide

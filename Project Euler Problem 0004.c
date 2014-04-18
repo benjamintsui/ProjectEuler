@@ -5,7 +5,7 @@
 #define MIN 100
 #define MAX 999
 
-int palindrome(char x[], int y);
+int palindrome(char string[], int length);
 
 int main(){
     char string[MAXSIZE]="";
