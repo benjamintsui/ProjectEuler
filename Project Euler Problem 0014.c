@@ -34,10 +34,12 @@ int main(){
 
 long long ruleOne(long long x){
     x=x/2;
+
     return x;
 }
 
 long long ruleTwo(long long x){
     x=3*x+1;
+
     return x;
 }

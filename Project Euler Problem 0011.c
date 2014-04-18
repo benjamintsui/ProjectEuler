@@ -28,6 +28,7 @@ int main(){                      //  0   1   2   3   4   5   6   7   8   9  10  
     };
     int x, y;
     int product=0, maxProduct=0;
+
     // horizontal
 for(x=MIN; x<=MAX-3; x++){
     for(y=MIN; y<MAX; y++){
@@ -65,5 +66,6 @@ for(x=MIN+3; x<=MAX; x++){
     }
 }
     printf("The max product is: %d\n", maxProduct);
+
     return 0;
 }

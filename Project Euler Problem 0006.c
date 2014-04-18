@@ -1,14 +1,13 @@
 #include <stdio.h>
-
+#define TARGET 100
 int main(){
-    int target = 100;
     int count = 1; // start at 3 for primes... we can do this since subject is ODD
     int sumSquares = 0;
     int sum = 0;
     int squareSums = 0;
     int difference = 0;
 
-    while (count <= target){
+    while (count <= TARGET){
         sumSquares = sumSquares + count * count;
         sum = sum + count;
         count++;
