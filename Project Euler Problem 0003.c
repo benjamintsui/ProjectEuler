@@ -13,14 +13,12 @@ int main(){
             target=target/check;
             largest=check;
         }
-        else{
-            check=check+2;
-        }
+        else check=check+2;
     }
-    if(target>largest){
+    if (target>largest){
         largest=target;
     }
-    printf("%d", largest);
+    printf("%d ", largest);
 
     return 0;
 }

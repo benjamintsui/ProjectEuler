@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int main(){
+
     int i;
     int numbers[1000]={
               37107, 28753, 39021,  2798, 79799, 82208, 37590, 24651,  1357, 40250,
@@ -106,7 +107,7 @@ int main(){
               53503, 53422, 64725, 24250, 87405, 40755, 91789, 78126, 43303, 31690
     };
 
-int one=0, two=0, three=0, four=0, five=0, six=0, seven=0, eight=0, nine=0, ten=0;
+    int one=0, two=0, three=0, four=0, five=0, six=0, seven=0, eight=0, nine=0, ten=0;
 
     for(i=0; i<1000; i=i+10){
         one=one+numbers[i+0];

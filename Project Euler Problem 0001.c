@@ -6,13 +6,9 @@ int main(){
     int sum=0;
 
     while(count<1000){
-        if((count%3==0) || (count%5==0)){
-            sum=sum+count;
-            count++;
-        }
-        else{
-            count++;
-        }
+        if((count%3==0) || (count%5==0))
+        {sum=sum+count; count++;}
+        else {count++;}
     }
     printf("sum: %d\n", sum);
 

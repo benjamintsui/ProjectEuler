@@ -29,42 +29,42 @@ int main(){                      //  0   1   2   3   4   5   6   7   8   9  10  
     int x, y;
     int product=0, maxProduct=0;
 
-    // horizontal
-for(x=MIN; x<=MAX-3; x++){
-    for(y=MIN; y<MAX; y++){
-        product=grid[x][y]*grid[x+1][y]*grid[x+2][y]*grid[x+3][y];
-        if(product>maxProduct){
-            maxProduct=product;
+        // horizontal
+    for(x=MIN; x<=MAX-3; x++){
+        for(y=MIN; y<MAX; y++){
+            product=grid[x][y]*grid[x+1][y]*grid[x+2][y]*grid[x+3][y];
+            if(product>maxProduct){
+                maxProduct=product;
+            }
         }
     }
-}
-    // vertical
-for(x=MIN; x<=MAX; x++){
-    for(y=MIN; y<MAX-3; y++){
-        product=grid[x][y]*grid[x][y+1]*grid[x][y+2]*grid[x][y+3];
-        if(product>maxProduct){
-            maxProduct=product;
+        // vertical
+    for(x=MIN; x<=MAX; x++){
+        for(y=MIN; y<MAX-3; y++){
+            product=grid[x][y]*grid[x][y+1]*grid[x][y+2]*grid[x][y+3];
+            if(product>maxProduct){
+                maxProduct=product;
+            }
         }
     }
-}
-    // diagonal upper left to lower right
-for(x=MIN; x<=MAX-3; x++){
-    for(y=MIN; y<MAX-3; y++){
-        product=grid[x][y]*grid[x+1][y+1]*grid[x+2][y+2]*grid[x+3][y+3];
-        if(product>maxProduct){
-            maxProduct=product;
+        // diagonal upper left to lower right
+    for(x=MIN; x<=MAX-3; x++){
+        for(y=MIN; y<MAX-3; y++){
+            product=grid[x][y]*grid[x+1][y+1]*grid[x+2][y+2]*grid[x+3][y+3];
+            if(product>maxProduct){
+                maxProduct=product;
+            }
         }
     }
-}
-    // diagonal upper right to lower left
-for(x=MIN+3; x<=MAX; x++){
-    for(y=MIN; y<MAX-3; y++){
-        product=grid[x][y]*grid[x-1][y+1]*grid[x-2][y+2]*grid[x-3][y+3];
-        if(product>maxProduct){
-            maxProduct=product;
+        // diagonal upper right to lower left
+    for(x=MIN+3; x<=MAX; x++){
+        for(y=MIN; y<MAX-3; y++){
+            product=grid[x][y]*grid[x-1][y+1]*grid[x-2][y+2]*grid[x-3][y+3];
+            if(product>maxProduct){
+                maxProduct=product;
+            }
         }
     }
-}
     printf("The max product is: %d\n", maxProduct);
 
     return 0;

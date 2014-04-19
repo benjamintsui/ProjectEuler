@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #define TARGET 20
 
 int main(){
